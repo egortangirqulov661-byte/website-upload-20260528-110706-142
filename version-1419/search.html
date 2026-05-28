@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-精选电影大全-高清电影片库-精选内容持续更新</title>
+  <meta name="description" content="搜索精选电影片库中的电影、剧集、动画、地区、年份与题材关键词。">
+  <meta name="keywords" content="精选电影大全,高清电影片库,精选内容持续更新,精选电影,高清电影,电影片库,影片搜索,电影搜索">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav-shell">
+    <a class="brand" href="index.html" aria-label="精选电影">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">
+        <strong>精选电影</strong>
+        <em>高清电影片库</em>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">菜单</button>
+    <div class="nav-panel">
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="categories.html">分类</a>
+        <a class="nav-link" href="ranking.html">排行榜</a>
+        <a class="nav-link active" href="search.html">搜索</a>
+      </div>
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="quick-links">
+        <a class="quick-link" href="category-featured.html">精选片库</a>
+        <a class="quick-link" href="category-action.html">动作冒险</a>
+        <a class="quick-link" href="category-drama.html">剧情人文</a>
+        <a class="quick-link" href="category-suspense.html">悬疑惊悚</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="inner-hero small-hero">
+    <div class="inner-shell">
+      <span class="eyebrow">Search</span>
+      <h1>影片搜索</h1>
+      <p>输入片名、地区、年份、类型或关键词，快速查找片库内容。</p>
+    </div>
+  </section>
+  <section class="content-section search-panel" data-search-page>
+    <form class="large-search" action="search.html" method="get">
+      <input type="search" name="q" data-search-input placeholder="搜索影片、地区、年份、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="search-status" data-search-status></div>
+    <div class="movie-grid" data-search-results></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-brand">
+      <div class="brand compact">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">
+          <strong>精选电影</strong>
+          <em>高清电影片库</em>
+        </span>
+      </div>
+      <p>精选多类型电影内容，页面按片库形式呈现，便于浏览优质影片与近期更新。</p>
+    </div>
+    <div class="footer-col">
+      <h2>频道入口</h2>
+      <ul>
+        <li><a href="index.html">首页推荐</a></li>
+        <li><a href="categories.html">分类总览</a></li>
+        <li><a href="ranking.html">热门排行</a></li>
+        <li><a href="search.html">影片搜索</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2>分类浏览</h2>
+      <ul>
+          <li><a href="category-featured.html">精选片库</a></li>
+          <li><a href="category-action.html">动作冒险</a></li>
+          <li><a href="category-drama.html">剧情人文</a></li>
+          <li><a href="category-suspense.html">悬疑惊悚</a></li>
+          <li><a href="category-romance.html">爱情家庭</a></li>
+          <li><a href="category-comedy.html">喜剧轻松</a></li>
+          <li><a href="category-fantasy.html">科幻奇幻</a></li>
+          <li><a href="category-global.html">环球影像</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 精选电影 · 高清电影片库</div>
+</footer>
+<script src="./assets/search-data.js" defer></script>
+<script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
